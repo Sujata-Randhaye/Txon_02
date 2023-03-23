@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal_style.css">
+    <script src="cal_work.js"></script>
+</head>
+<body>
+    <h1>Let's Calculate!</h1>
+    <div class="calculator">
+    <table id="calcu">
+        <tr class="cal">
+            <td colspan="4"><input type="text" id="result"></td>
+            
+        </tr>
+
+        <tr class="button">
+            <td><input id="op"style="border-radius: 26px;"type="button" value="C" onclick="clr()"></td>
+            <td><input id="op"type="button" value="/" onclick="solve('/')"></td>
+            <td><input id="op"type="button" value="x" onclick="solve('*')"></td>
+            <td><input id="op"type="button" value="←" onclick="back()"></td>
+        </tr>
+        <tr class="button">
+            <td><input type="button" value="7"  onclick="solve('7')"></td>
+            <td><input type="button" value="8" onclick="solve('8')"></td>
+            <td><input type="button" value="9" onclick="solve('9')"></td>
+            <td><input id="op"type="button" value="-" onclick="solve('-')"></td>
+    
+            
+        </tr>
+        <tr class="button">
+            <td><input type="button" value="4" onclick="solve('4')"></td>
+            <td><input type="button" value="5" onclick="solve('5')"></td>
+            <td><input type="button" value="6" onclick="solve('6')"></td>
+            <td><input id="op"type="button" value="+" onclick="solve('+')"></td>
+  
+
+        </tr>
+        <tr class="button">
+            <td><input type="button" value="1" onclick="solve('1')"></td>
+            <td><input type="button" value="2" onclick="solve('2')"></td>
+            <td><input type="button" value="3" onclick="solve('3')"></td>
+            <td rowspan="2"><input id="equal" type="button" value="=" onclick="Result()"></td>
+
+               </tr>
+        <tr class="button">
+            <td><input type="button" value="0" onclick="solve('0')"></td>
+            <td><input id="op"type="button" value="." onclick="solve('.')"></td>
+            <td><input id="op"type="button" value="%" onclick="solve('%')"></td>
+           
+                    
+        </tr>
+   
+    </table>
+    </div>
+</body>
+</html>
